@@ -1,0 +1,54 @@
+body{
+    background-color: wheat;
+}
+
+nav{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+#projectContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+#projectContainer button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+#projectContainer button:hover {
+    background-color: #ddd;
+}
+
+#projectContainer button.active {
+    background-color: #ccc;
+}
+
+#projectContainer button.current{
+    background-color: darkgray;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 95vh;
+}
+
+#taskContainer, #infoContainer {
+    border: 1px solid #ccc;
+}
+
+h1{
+    font-size: 10vw;
+}
